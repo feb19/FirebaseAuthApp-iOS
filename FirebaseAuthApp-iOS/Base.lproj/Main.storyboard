@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseAuthApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="FirebaseAuthApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,7 +37,7 @@
         <!--Auth View Controller-->
         <scene sceneID="Y9k-h2-LuR">
             <objects>
-                <viewController storyboardIdentifier="AuthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pbn-Fh-Z4L" customClass="AuthViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Pbn-Fh-Z4L" customClass="AuthViewController" customModule="FirebaseAuthApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="onE-RG-MsU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,6 +62,9 @@
                                 <state key="normal" title="アカウントを作成">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpButtonWasTapped:" destination="Pbn-Fh-Z4L" eventType="touchUpInside" id="26M-0M-4ST"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vW-TH-8Yy">
                                 <rect key="frame" x="24" y="290" width="327" height="44"/>
@@ -73,6 +76,9 @@
                                 <state key="normal" title="ログイン">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInButtonWasTapped:" destination="Pbn-Fh-Z4L" eventType="touchUpInside" id="zmr-Y4-NVk"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5h-5g-ASO">
                                 <rect key="frame" x="24" y="36" width="327" height="18"/>
@@ -111,6 +117,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wzg-2c-gke"/>
                     </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="S5h-5g-ASO" id="Ncq-32-QAT"/>
+                        <outlet property="mailTextField" destination="M8j-Oz-kVR" id="ozx-J2-9sH"/>
+                        <outlet property="passwordTextField" destination="V9u-Fe-1aJ" id="O3D-su-HnP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExQ-Sn-ZnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,7 +130,7 @@
         <!--Home View Controller-->
         <scene sceneID="Ruy-Sh-pr3">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1t0-qd-sAB" customClass="HomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1t0-qd-sAB" customClass="HomeViewController" customModule="FirebaseAuthApp_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XDK-Wz-TWC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -130,6 +141,9 @@
                                 <state key="normal" title="ログアウト">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signOutButtonWasTapped:" destination="1t0-qd-sAB" eventType="touchUpInside" id="12e-7u-7hU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
