@@ -12,9 +12,11 @@
 		4687BD2121182F0600F764AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4687BD1F21182F0600F764AE /* Main.storyboard */; };
 		4687BD2321182F0800F764AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4687BD2221182F0800F764AE /* Assets.xcassets */; };
 		4687BD2621182F0800F764AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4687BD2421182F0800F764AE /* LaunchScreen.storyboard */; };
+		B4F83F240CF2D798142A1852 /* Pods_FirebaseAuthApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23161DA618A697F2D16948C3 /* Pods_FirebaseAuthApp_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23161DA618A697F2D16948C3 /* Pods_FirebaseAuthApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseAuthApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4687BD1821182F0500F764AE /* FirebaseAuthApp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FirebaseAuthApp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4687BD1B21182F0600F764AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4687BD1D21182F0600F764AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4687BD2221182F0800F764AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4687BD2521182F0800F764AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4687BD2721182F0800F764AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96CC4CCEE23DDB7D08207537 /* Pods-FirebaseAuthApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseAuthApp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseAuthApp-iOS/Pods-FirebaseAuthApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9B675284E821FCDD6FBEA5FC /* Pods-FirebaseAuthApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseAuthApp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseAuthApp-iOS/Pods-FirebaseAuthApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F83F240CF2D798142A1852 /* Pods_FirebaseAuthApp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4687BD1A21182F0600F764AE /* FirebaseAuthApp-iOS */,
 				4687BD1921182F0600F764AE /* Products */,
+				87910E81AEF813AEF3247C00 /* Pods */,
+				68C65B4C6A4614ABF9C89753 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "FirebaseAuthApp-iOS";
 			sourceTree = "<group>";
 		};
+		68C65B4C6A4614ABF9C89753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23161DA618A697F2D16948C3 /* Pods_FirebaseAuthApp_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87910E81AEF813AEF3247C00 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B675284E821FCDD6FBEA5FC /* Pods-FirebaseAuthApp-iOS.debug.xcconfig */,
+				96CC4CCEE23DDB7D08207537 /* Pods-FirebaseAuthApp-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4687BD2A21182F0800F764AE /* Build configuration list for PBXNativeTarget "FirebaseAuthApp-iOS" */;
 			buildPhases = (
+				D3140B562C1A4D5DC46466A5 /* [CP] Check Pods Manifest.lock */,
 				4687BD1421182F0500F764AE /* Sources */,
 				4687BD1521182F0500F764AE /* Frameworks */,
 				4687BD1621182F0500F764AE /* Resources */,
+				866F20A13C0F391C3BF03AE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		866F20A13C0F391C3BF03AE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseAuthApp-iOS/Pods-FirebaseAuthApp-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirebaseAuthApp-iOS/Pods-FirebaseAuthApp-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3140B562C1A4D5DC46466A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseAuthApp-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4687BD1421182F0500F764AE /* Sources */ = {
@@ -278,15 +347,13 @@
 		};
 		4687BD2B21182F0800F764AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B675284E821FCDD6FBEA5FC /* Pods-FirebaseAuthApp-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPN23T94U7;
 				INFOPLIST_FILE = "FirebaseAuthApp-iOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.feb19.FirebaseAuthApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +363,13 @@
 		};
 		4687BD2C21182F0800F764AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96CC4CCEE23DDB7D08207537 /* Pods-FirebaseAuthApp-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LPN23T94U7;
 				INFOPLIST_FILE = "FirebaseAuthApp-iOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.feb19.FirebaseAuthApp-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
