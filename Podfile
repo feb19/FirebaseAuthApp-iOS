@@ -8,5 +8,6 @@ target 'FirebaseAuthApp-iOS' do
   # Pods for FirebaseAuthApp-iOS
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'JGProgressHUD'
 
 end

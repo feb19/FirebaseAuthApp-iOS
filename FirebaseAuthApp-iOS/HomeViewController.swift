@@ -7,3 +7,26 @@
 //
 
 import Foundation
+import UIKit
+import Firebase
+import FirebaseAuth
+
+class HomeViewController: UIViewController {
+    
+    
+    
+    @IBAction func signOutButtonWasTapped(_ sender: UIButton) {
+        signOut()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func signOut() {
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+    }
+}
